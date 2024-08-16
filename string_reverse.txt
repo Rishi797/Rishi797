@@ -1,0 +1,17 @@
+// To reverse the given string
+#include <stdio.h>
+#include <string.h>
+void main() 
+{    
+
+ char st[20],strrev[20];
+ printf("Enter the name:");
+ scanf("%s",st);
+ //printf("final result:%s",st);
+ for(int i = strlen(st); i>=0 ; i--)
+  {
+     strrev[strlen(st)-1-i] = st[i];
+     printf("%c",st[i]);
+  }
+  printf("\nfinal result:%s",strrev);
+}
